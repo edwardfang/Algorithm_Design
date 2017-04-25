@@ -11,3 +11,6 @@ Develop a DFS algorithm for undirected weighted/unweighted graph to get all the 
 ### Lab 6 LRU Algorithm
 
 ### Lab 7 Huffman Coding Compression and Decompression for any file
+
+### Lab 8 MergeSort & Inversion Counting
+
