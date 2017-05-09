@@ -1,5 +1,5 @@
 # Algorithm_Design
-SUSTech Algorrithm Design and Analysis CS208 Lab Assignments
+SUSTech Algorithm Design and Analysis CS208 Lab Assignments
 
 ### Lab 3 Depth-First-Search Algorithm
 Develop a DFS algorithm for undirected weighted/unweighted graph to get all the distances from one source
