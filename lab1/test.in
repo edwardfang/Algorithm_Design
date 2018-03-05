@@ -1,7 +1,9 @@
 3
-3 1 2
-3 2 1
-1 3 2
-1 2 3
-1 2 3
-2 3 1
+alice bob calvin
+adam bale campbell
+bob calvin alice
+calvin bob alice
+bob alice calvin
+adam bale campbell
+adam campbell bale
+bale adam campbell

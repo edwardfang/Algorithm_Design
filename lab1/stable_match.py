@@ -8,12 +8,18 @@ def main():
     dim = int(input())
     pref_dalao = list()
     pref_mengxin = list()
+    dl_list = raw_input().split()
+    mx_list = raw_input().split()
+    # dl_map = dict(zip(range(1, dim+1), dl_list))
+    dl_map_reverse = dict(zip(dl_list, range(1, dim+1)))
+    mx_map = dict(zip(range(1, dim+1), mx_list))
+    mx_map_reverse = dict(zip(mx_list, range(1, dim+1)))
     for idx in range(dim):
-        ls = map(int, raw_input().split())  # 以列表的形式读入
+        ls = map(lambda x: dl_map_reverse[x], raw_input().split())  # 以列表的形式读入
         pref_dalao.append(ls)
 
     for idx in range(dim):
-        ls = map(int, raw_input().split())  # 以列表的形式读入
+        ls = map(lambda x: mx_map_reverse[x], raw_input().split())  # 以列表的形式读入
         pref_mengxin.append(ls)
     # algorithm begin
     pairs = dict()
@@ -50,7 +56,7 @@ def main():
         reverse_dict[value] = key
     out_str = ''
     for idx in range(1, dim + 1):
-        out_str += str(reverse_dict[idx]) + ' '
+        out_str += mx_map[reverse_dict[idx]] + ' '
     print(out_str[:-1])
     # print(pairs)
 
